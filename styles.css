@@ -11,6 +11,8 @@
     font-family: Inter;
     src: url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
 }
+.attribution { font-size: 11px; text-align: center; position: fixed; bottom: 0; }
+.attribution a { color: hsl(228, 45%, 44%); }
 
 html{
     font-size: 10px;
