@@ -8,68 +8,98 @@
   
   <title>Frontend Mentor | News homepage</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
   <link rel="stylesheet" href="./styles.css">
  </head>
+ 
 <body>
+
 <header class = "header">
-  <a href="./home"><img src="/assets/images/logo.svg" alt="News page logo -Click to go home"></a>
-  <ul>
-    <li><a>Home</a></li>
-    <li><a>New</a></li>
-    <li><a>Popular</a></li>
-    <li><a>Trending</a></li>
-    <li><a>Categories</a></li>
-  </ul>
+  <a class="homepage-logo" href="./home"><img class="homepage-logo-img" src="/assets/images/logo.svg" alt="News page logo -Click to go home"></a>
+  <button class = "nav-toggle" aria-label = "toggle-navigation">
+    <span class = "hamburger"></span>
+  </button>
+  
+
+  <nav class= "nav">
+    <ul class = "nav-list">
+      <li class = "nav-item"><a class = "nav-link">Home</a></li>
+      <li class = "nav-item"><a class = "nav-link">New</a></li>
+      <li class = "nav-item"><a class = "nav-link">Popular</a></li>
+      <li class = "nav-item"><a class = "nav-link">Trending</a></li>
+      <li class = "nav-item"><a class = "nav-link">Categories</a></li>
+    </ul>
+  </nav>
+  
+  
 </header>
-<main>
-  <img src="./assets/images/image-web-3-desktop.jpg" alt="Colorful image of lego like blocks fitting together" height = "200px">
 
 
-
-</main> 
-
-
-  <h1>The Bright Future of Web 3.0?</h1>
-
-  <p>
-    We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people.
-    But is it really fulfilling its promise?
-  </p>
-
-  <button class = "read-more-btn">Read more</button>
-<aside>
-    <h2>New</h2>
-    <h3 class = "aside-heading">Hydrogen VS Electric Cars</h3>
-    <p class = "aside-description">Will hydrogen-fueled cars ever catch up to EVs?</p>
+<div class = "grid-container-main">
   
-    <h3 class = "aside-heading">The Downsides of AI Artistry</h3>
-    <p class = "aside-description">What are the possible adverse effects of on-demand AI image generation?</p>
-  
-    <h3 class = "aside-heading">Is VC Funding Drying Up?</h3>
-    <p class = "aside-description">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
-</aside>
+   <div class="grid-item-1">
+    <img class ="image-main"  src="./assets/images/image-web-3-desktop.jpg" alt="Colorful image of lego like blocks fitting together">
+    <img class ="image-main-mobile"  src="./assets/images/image-web-3-mobile.jpg" alt="Colorful image of lego like blocks fitting together">
+  </div>
+    
+    
+    
+    <main class="grid-item-2">
+      
+        <h1 class = "main-heading">The Bright Future of Web 3.0?</h1>
+      
+        <div class="grid-item-2-item">
+          <p>
+            We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people.
+            But is it really fulfilling its promise?
+          </p>
+          <button class = "read-more-btn">Read more</button>
+        </div>
+    </main>
+    
+    <aside class = "aside grid-item-3">
+
+        <h2 class = "aside-heading-main">New</h2>
+        <h3 class = "aside-heading">Hydrogen VS Electric Cars</h3>
+        <p class = "aside-description">Will hydrogen-fueled cars ever catch up to EVs?</p>
+    
+        <h3 class = "aside-heading">The Downsides of AI Artistry</h3>
+        <p class = "aside-description">What are the possible adverse effects of on-demand AI image generation?</p>
+    
+        <h3 class = "aside-heading">Is VC Funding Drying Up?</h3>
+        <p class = "aside-description">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+    </aside>
+
+
 <div class = "additional-article-section-container">
   
     <div class = "additional-article">
-      <img src="assets\images\image-retro-pcs.jpg" alt="Retro PC picture for reviving retro PC article">
-      <p>01</p>
-      <h2>Reviving Retro PCs</h2>
-      <p>What happens when old PCs are given modern upgrades?</p>
+      <img class = "additional-article-img" src="assets\images\image-retro-pcs.jpg" alt="Retro PC picture for reviving retro PC article">
+      
+      <div class ="additional-article-info">
+        <p class = "additional-article-info-number">01</p>
+        <h2>Reviving Retro PCs</h2>
+        <p>What happens when old PCs are given modern upgrades?</p>
+      </div>
+   
     </div>
   
     <div class = "additional-article">
-      <img src="assets\images\image-top-laptops.jpg" alt="Black key keyboard with glowing red backlights">
-      <p>02</p>
-      <h2>Top 10 Laptops of 2022</h2>
-      <p>Our best picks for various needs and budgets.</p>
+      <img class = "additional-article-img"src="assets\images\image-top-laptops.jpg" alt="Black key keyboard with glowing red backlights">
+      <div class ="additional-article-info">
+        <p class = "additional-article-info-number">02</p>
+        <h2>Top 10 Laptops of 2022</h2>
+        <p>Our best picks for various needs and budgets.</p>
+      </div>
     </div>
   
     <div class = "additional-article">
-      <p>03</p>
-      <img src="assets\images\image-gaming-growth.jpg" alt="Hand throwing up a white playstation 3 remote">
-      <h2>The Growth of Gaming</h2>
-      <p>How the pandemic has sparked fresh opportunities.</p>
+      <img class = "additional-article-img" src="assets\images\image-gaming-growth.jpg" alt="Hand throwing up a white playstation 3 remote">
+      <div class ="additional-article-info">
+        <p class = "additional-article-info-number">03</p>
+        <h2>The Growth of Gaming</h2>
+        <p>How the pandemic has sparked fresh opportunities.</p>
+      </div>
     </div>
   
 </div>
@@ -77,5 +107,22 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+</div>
+
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelectorAll('.nav__link')
+  
+      navToggle.addEventListener('click', () => {
+          document.body.classList.toggle('nav-open');
+      });
+  
+      navLinks.forEach(link => {
+          link.addEventListener('click', () => {
+              document.body.classList.remove('nav-open');
+          })
+      })
+  
+   </script>
 </body>
 </html>
